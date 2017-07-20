@@ -48,7 +48,7 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python 2 was already installed on my computer. Since Python 3 is recommended for the prework I created a new environment and installed Python 3.
 
 ### Q2. Which Python Version Installed   
 
