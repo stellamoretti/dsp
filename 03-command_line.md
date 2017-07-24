@@ -55,12 +55,12 @@ What do the following commands do:
 `ls -Glp`  
 
 > >* `ls`  lists all files and directories in the working directory
-* `ls -a`  lists all contents of a directory including hidden files and directories
-* `ls -l`  lists all contents of a directory in long format
-* `ls -lh`  lists all contents of a directory in long format with readable file size
-* `ls -lah`  lists all contents of a directory (including hidden files) in long format with readable file size
-* `ls -t`  lists all files and directories, ordered by the time they were last modified
-* `ls -Glp` lists contents of a directory in long format, colorized output enabled, and displays directories with /
+> >* `ls -a`  lists all contents of a directory including hidden files and directories
+> >* `ls -l`  lists all contents of a directory in long format
+> >* `ls -lh`  lists all contents of a directory in long format with readable file size
+> >* `ls -lah`  lists all contents of a directory (including hidden files) in long format with readable file size
+> >* `ls -t`  lists all files and directories, ordered by the time they were last modified
+> >* `ls -Glp` lists contents of a directory in long format, colorized output enabled, and displays directories with /
 
 ---
 
