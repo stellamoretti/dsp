@@ -20,27 +20,27 @@ Here's a list of items with which you should be familiar:
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
 > >
-* `pwd` show current working directory path
-* `mkdir` creating a directory
-* `rmdir` deleting a directory
-* `touch` creating a file
-* `rm` deleting a file
-* `mv` renaming a file
-* `ls -a` listing hidden files
-* `cp` copying a file from one directory to another
-* `cd` changing directory
-* `ls` listing files and directories
-* `cat` printing the contents of a file within the Terminal
-* `grep` "global regular expression print", finding things inside files (case sensitive)
-* `man` reading a manual page
-* `env` returning a list of the environment variables for the current user
-* `echo` printing arguments
-* `export` exporting or setting a new environment variable
-* `exit` exiting the Terminal
-* `sort` sorting files / directories in alphabetical order
-* `sed` "stream editor" - similar to find and replace
-* `source` activating the changes made to a file in the current session
-* `history` printing a history of Terminal commands from the current session
+> >* `pwd` show current working directory path
+> >* `mkdir` creating a directory
+> >* `rmdir` deleting a directory
+> >* `touch` creating a file
+> >* `rm` deleting a file
+> >* `mv` renaming a file
+> >* `ls -a` listing hidden files
+> >* `cp` copying a file from one directory to another
+> >* `cd` changing directory
+> >* `ls` listing files and directories
+> >* `cat` printing the contents of a file within the Terminal
+> >* `grep` "global regular expression print", finding things inside files (case sensitive)
+> >* `man` reading a manual page
+> >* `env` returning a list of the environment variables for the current user
+> >* `echo` printing arguments
+> >* `export` exporting or setting a new environment variable
+> >* `exit` exiting the Terminal
+> >* `sort` sorting files / directories in alphabetical order
+> >* `sed` "stream editor" - similar to find and replace
+> >* `source` activating the changes made to a file in the current session
+> >* `history` printing a history of Terminal commands from the current session
 ---
 
 ### Q2.  List Files in Unix   
@@ -69,10 +69,10 @@ What do the following commands do:
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
 > >* `ls -R` displays subdirectories as well
-* `ls -S` sort by file size
-* `ls -1` displays each entry on a line
-* `ls -m` displays the names as a CSV
-* `ls *.txt` list only text files with wildcard
+> >* `ls -S` sort by file size
+> >* `ls -1` displays each entry on a line
+> >* `ls -m` displays the names as a CSV
+> >* `ls *.txt` list only text files with wildcard
 ---
 
 ### Q4.  Xargs   
