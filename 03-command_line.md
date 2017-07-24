@@ -54,14 +54,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> >
-`ls`  lists all files and directories in the working directory
-`ls -a`  lists all contents of a directory including hidden files and directories
-`ls -l`  lists all contents of a directory in long format
-`ls -lh`  lists all contents of a directory in long format with readable file size
-`ls -lah`  lists all contents of a directory (including hidden files) in long format with readable file size
-`ls -t`  lists all files and directories, ordered by the time they were last modified
-`ls -Glp` lists contents of a directory in long format, colorized output enabled, and displays directories with /
+> >* `ls`  lists all files and directories in the working directory
+* `ls -a`  lists all contents of a directory including hidden files and directories
+* `ls -l`  lists all contents of a directory in long format
+* `ls -lh`  lists all contents of a directory in long format with readable file size
+* `ls -lah`  lists all contents of a directory (including hidden files) in long format with readable file size
+* `ls -t`  lists all files and directories, ordered by the time they were last modified
+* `ls -Glp` lists contents of a directory in long format, colorized output enabled, and displays directories with /
 
 ---
 
@@ -69,12 +68,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> >
-`ls -R` displays subdirectories as well
-`ls -S` sort by file size
-`ls -1` displays each entry on a line
-`ls -m` displays the names as a CSV
-`ls *.txt` list only text files with wildcard
+> >* `ls -R` displays subdirectories as well
+* `ls -S` sort by file size
+* `ls -1` displays each entry on a line
+* `ls -m` displays the names as a CSV
+* `ls *.txt` list only text files with wildcard
 ---
 
 ### Q4.  Xargs   
