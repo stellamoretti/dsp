@@ -32,7 +32,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> Lists and sets are similar in the following ways:
 >> - Each is a sequence of values.
->> - They can both be accessed using a `for` loop.
+>> - They are both iterable (e.g. can be accessed using a `for` loop).
 >>
 >> Lists and sets are different in the following ways:
 >> - Lists are ordered whereas sets are unordered.
@@ -47,7 +47,15 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda` expressions are small anonymous functions which behave just like regular functions but are syntactically restricted to a single expression. They can be used wherever function objects are required, and are commonly used in conjunction with `filter()`, `map()` and `reduce()` functions.
+>>  
+>> Example 1:  
+>> `>>> (lambda x,y: x * y)(2,3)`  
+>> `6`  
+>>  
+>> Example 2:  
+>> `>>> sorted([9,0,-99,98,6,15,-1,-55], key=lambda x: abs(x))`  
+>> `[0, -1, 6, 9, 15, -55, 98, -99]`
 
 ---
 
