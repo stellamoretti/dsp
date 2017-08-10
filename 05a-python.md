@@ -12,7 +12,17 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and tuples are similar in the following ways:
+>> - Each is a sequence of values.
+>> - The values can be any type.
+>> - The values are indexed by integers.
+>>
+>> Lists and tuples are different in the following ways:
+>> - A list is mutable (its values can be changed) whereas a tuple is immutable (its values cannot be changed once created).
+>> - Lists are homogeneous sequences (i.e. have order) and Tuples are heterogeneous data structures (i.e. are structured).
+>> - Syntactically, lists are enclosed within square brackets and tuples are enclosed within parentheses.
+>>
+>> A dictionary is implemented using a hashtable, which means that its keys have to be "hashable" (i.e. mutable). Hence, lists may be used as keys but tuples cannot.
 
 ---
 
@@ -20,7 +30,16 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and sets are similar in the following ways:
+>> - Each is a sequence of values.
+>> - They can both be accessed using a `for` loop.
+>>
+>> Lists and sets are different in the following ways:
+>> - Lists are ordered whereas sets are unordered.
+>> - Lists may contain duplicate items, whereas the elements in a set are unique.
+>> - List values are indexed whereas set items cannot be accessed by index.
+>> - A list is mutable (its values can be changed) whereas a set is immutable (its values cannot be changed once created).
+>> - Syntactically, lists are enclosed within square brackets and sets are enclosed within curly brackets.
 
 ---
 
