@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I am very new to the use of terminal editors, so nano seems to be the simplest to use for now.  But I would like to become familiar with all three editors over time.
 
 --
 
