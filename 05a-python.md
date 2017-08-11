@@ -50,12 +50,16 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >> `lambda` expressions are small anonymous functions which behave just like regular functions but are syntactically restricted to a single expression. They can be used wherever function objects are required, and are commonly used in conjunction with `filter()`, `map()` and `reduce()` functions.
 >>  
 >> Example 1:  
->> `>>> (lambda x,y: x * y)(2,3)`  
->> `6`  
+>> ```
+>> >>> (lambda x,y: x * y)(2,3)  
+>> 6
+>> ```  
 >>  
 >> Example 2:  
->> `>>> sorted([9,0,-99,98,6,15,-1,-55], key=lambda x: abs(x))`  
->> `[0, -1, 6, 9, 15, -55, 98, -99]`
+>> ```
+>> >>> sorted([9,0,-99,98,6,15,-1,-55], key=lambda x: abs(x))  
+>> [0, -1, 6, 9, 15, -55, 98, -99]
+>> ```
 
 ---
 
@@ -63,7 +67,17 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions provide a concise way to create lists. A list comprehension consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. The result will be a new list resulting from evaluating the expression in the context of the `for` and `if` clauses which follow it.  
+>> Example 1:  
+>> Usual way:  
+>> ```
+>> >>> numbers = [1,5,6,9,10,11,15,16]  
+>> >>> divisible_by_3 = []  
+>> >>> for num in numbers:  
+>> >>>     if num % 3 == 0:  
+>> >>>         divisible_by_3.append(num)  
+>> >>> return divisible_by_3  
+>> ```
 
 ---
 
