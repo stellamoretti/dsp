@@ -67,8 +67,10 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> List comprehensions provide a concise way to create lists. A list comprehension consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. The result will be a new list resulting from evaluating the expression in the context of the `for` and `if` clauses which follow it.  
->> Example 1:  
+>> List comprehensions provide a concise way to create lists. A list comprehension consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. The result will be a new list resulting from evaluating the expression in the context of the `for` and `if` clauses which follow it. 
+>>  
+>> __Example 1: Filtering a list__  
+>>  
 >> Usual way:  
 >> ```
 >> >>> numbers = [1,5,6,9,10,11,15,16]  
@@ -78,7 +80,24 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> >>>         divisible_by_3.append(num)  
 >> >>> return divisible_by_3  
 >> ```
-
+>> Using list comprehension:  
+>> ```
+>> >>> [num for num in numbers if num % 3 == 0]
+>> ```
+>> __Example 2: Mapping a function__  
+>>  
+>> Usual way:  
+>> ```
+>> >>> numbers = [1,2,3,4,5,6]  
+>> >>> squared = []  
+>> >>> for num in numbers:  
+>> >>>     squared.append(num ** 2)
+>> >>> return squared  
+>> ```
+>> Using list comprehension:  
+>> ```
+>> >>> [num ** 2 for num in numbers]
+>> ```
 ---
 
 ### Complete the following problems by editing the files below:
