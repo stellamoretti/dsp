@@ -67,7 +67,12 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> List comprehensions provide a concise way to create lists. A list comprehension consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. The result will be a new list resulting from evaluating the expression in the context of the `for` and `if` clauses which follow it. 
+>> List comprehensions provide a concise way to create lists. A list comprehension consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. The result will be a new list resulting from evaluating the expression in the context of the `for` and `if` clauses which follow it.  
+>>  
+>> The simplest form of a list comprehension is:  
+>> `[expression-involving-loop-variable for loop-variable in sequence]`  
+>> A filtered list comprehension will be structured in the following way:  
+>> `[expression-involving-loop-variable for loop-variable in sequence if boolean-expression-involving-loop-variable]`
 >>  
 >> __Example 1: Filtering a list__  
 >>  
@@ -97,6 +102,34 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> Using list comprehension:  
 >> ```
 >> >>> [num ** 2 for num in numbers]
+>> ```
+>> __Example 3: Dictionary comprehension__  
+>>  
+>> Usual way:  
+>> ```
+>> >>> numbers = [1,2,3,4,5,6]  
+>> >>> squared = {}  
+>> >>> for num in numbers:  
+>> >>>     squared.update({num: num ** 2})
+>> >>> return squared  
+>> ```
+>> Using dictionary comprehension:  
+>> ```
+>> >>> {num: num ** 2 for num in (1,2,3,4,5,6)}  
+>> ```
+>> __Example 4: Set comprehension__  
+>>  
+>> Usual way:  
+>> ```
+>> >>> numbers = [1,2,3,4,5,6,1,2]  
+>> >>> squared = set() 
+>> >>> for num in numbers:  
+>> >>>     squared.add(num ** 2)
+>> >>> return squared  
+>> ```
+>> Using set comprehension:  
+>> ```
+>> >>> {num ** 2 for num in numbers}  
 >> ```
 ---
 
