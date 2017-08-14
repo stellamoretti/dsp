@@ -41,6 +41,9 @@ How are Python lists and sets similar and different? Give examples of using both
 >> - A list is mutable (its values can be changed) whereas a set is immutable (its values cannot be changed once created).
 >> - Syntactically, lists are enclosed within square brackets and sets are enclosed within curly brackets.
 
+>> Comparing performance:  
+>> If iterating over a sequence of values, Python perform slower than lists because they use a hashtable as their underlying data structure.  However if checking the existence of a value in a sequence, this can be performed faster with a set in which the elements are unique.
+
 ---
 
 ### Q3. Lambda Function
