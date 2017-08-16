@@ -129,18 +129,11 @@ def verbing(s):
 import re
 
 def not_bad(s):
-    t = re.split(r'[! ]',s)
-    if 'not' not in t or 'bad' not in t:
-        return s
+    t = re.search(r'(.*)not.+bad(.*)',s)
+    if t:
+        return t.group(1)+'good'+t.group(2)
     else:
-        start = t.index('not')
-        end = t.index('bad')
-        if end < start:
-            return s
-        else:
-            del t[start:end + 1]
-            t.insert(start,'good')
-            return ' '.join(t)
+        return s
 
 """
     Consider dividing a string into two halves. If the length is even,
@@ -158,13 +151,13 @@ def not_bad(s):
     'KitDontenut'
 """
 def even_string(s):
-    front = s[:len(s)/2]
-    back = s[len(s)/2:]
+    front = s[:len(s)//2]
+    back = s[len(s)//2:]
     return front, back
 
 def odd_string(s):
-    front = s[:(len(s)/2)+1]
-    back = s[1+(len(s))/2:]
+    front = s[:(len(s)//2)+1]
+    back = s[1+(len(s))//2:]
     return front, back
 
 def front_back(a, b):
