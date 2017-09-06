@@ -89,6 +89,18 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> I will primarily be using Atom as my graphical editor, in conjunction with Spyder.
+>> I will primarily be using Atom as my graphical editor, in conjunction with Spyder.  
+>> Useful keyboard shortcuts for Atom:  
+>> 
+>> |   |graphical editor| open a new file | edit a file  |  save a file  |  quit     |  
+>> |---|----------------|-----------------|--------------|---------------|-----------|
+>> | 1 | atom           | cmd + n         | [just type]  | cmd + s       |  cmd + q  |
+>>   
+>> Some customisations include:
+>> - Setting the default tab type and length to 4 spaces (called a "soft" tab in Atom).
+>> - Enabling automatic soft wrap of text at the preferred line length (set to 80 characters).
+>> - Enabling project folders which allows for quick access to files.
+>> - Changing the UI theme so that it is easier on the eye (e.g. light / dark).
+
 
  
