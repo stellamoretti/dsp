@@ -86,7 +86,26 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> 
+>> _Note: gender is important!_
+>>   
+>> First determine the unconditional probabilities:
+>>   
+>> P(fraternal twins & twin __brother__)
+>>  = P(fraternal twins) x P(both boys|fraternal twins)
+>>  = 1/125 * 1/4
+>>  = 1/500
+>>   
+>> P(identical twins & twin __brother__)
+>>  = P(identical twins) x P(both boys|identical twins)
+>>  = 1/300 * 1/2
+>>  = 1/600
+>>   
+>> Next, calculate the conditional probability that Elvis was an identical twin:
+>> P(identical twins|twin brother)
+>>  = P(identical twins & twin brother) / P(twin brother)
+>>  = (1/600) / ( (1/500) + (1/600) )
+>>  = 0.54
+>>  = __54%__
 
 ---
 
@@ -100,29 +119,29 @@ How do frequentist and Bayesian statistics compare?
 >> - depends on the likelihood for both observed and unobserved data
 >> - uses probability _only_ to model certain processes broadly described as "sampling"
 >> - tends to be less computationally intensive
->> 
+>>
 >> __Bayesian methods__
 >> - use probabilities for both hypotheses and data
 >> - depend on the prior and likelihood of observed data
 >> - use probability more widely to model both sampling and other kinds of uncertainty
 >> - may be computationally intensive
->> 
+>>
 >> __Example 1: flipping a coin__
 >> If you suspect a friend has a weighted coin and you observe that it comes up heads 9 times out of 10...  
->> 
+>>
 >> __Frequentists__ would calculate the probability of getting such a result with an unweighted coin.  The answer (~1%) is not a direct measure of the probability that the coin is weighted; its a measure of how improbable the 9-in-10 result is - a piece of information that can be useful in investigating your suspicion.  
->> 
+>>
 >> __Bayesian__ calculations go straight for the probability of the hypothesis, factoring in not just the data from the coin-toss experiment but any other relevant information - including whether you have previously seen your friend use a weighted coin.  
->> 
+>>
 >> _Source:_
 >> https://www.nytimes.com/2014/09/30/science/the-odds-continually-updated.html?_r=1
->> 
+>>
 >> __Example 2: average height of males__  
->> 
+>>
 >> __Bayesian__ calculations would begin with a prior probability distribution which reflects the state of knowledge about the average height before collecting any data. After collecting some data (e.g. random samples) the prior distribution is updated in light of the data to get a new probability distribution called the posterior distribution, which reflects our state of knowledge about the average height after collecting data.
->> 
+>>
 >> __Frequentists__ would make a probability statement about _sampling_ a random draw of the population.  They would use techniques such as p-values, confidence intervals and hypothesis tests.
->> 
+>>
 >> _Source:_  
 >> https://www.quora.com/What-is-the-difference-between-Bayesian-and-frequentist-statisticians
 
