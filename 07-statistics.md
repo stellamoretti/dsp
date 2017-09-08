@@ -22,11 +22,11 @@ Complete the following exercises along with the questions in this file. Some can
 
 Communicate the problem, how you solved it, and the solution, within each of the following [markdown](https://guides.github.com/features/mastering-markdown/) files. (You can include code blocks and images within markdown.)
 
-## <a name="section-b"></a>2.  Why We Are Using Think Stats 
+## <a name="section-b"></a>2.  Why We Are Using Think Stats
 
-The stats exercises have been chosen to introduce/solidify some relevant statistical concepts related to data science.  The solutions for these exercises are available in the [ThinkStats repository on GitHub](https://github.com/AllenDowney/ThinkStats2).  You should focus on understanding the statistical concepts, python programming and interpreting the results.  If you are stuck, review the solutions and recode the python in a way that is more understandable to you. 
+The stats exercises have been chosen to introduce/solidify some relevant statistical concepts related to data science.  The solutions for these exercises are available in the [ThinkStats repository on GitHub](https://github.com/AllenDowney/ThinkStats2).  You should focus on understanding the statistical concepts, python programming and interpreting the results.  If you are stuck, review the solutions and recode the python in a way that is more understandable to you.
 
-For example, in the first exercise, the author has already written a function to compute Cohen's D.  **You could import it, or you could write your own code to practice python and develop a deeper understanding of the concept.** 
+For example, in the first exercise, the author has already written a function to compute Cohen's D.  **You could import it, or you could write your own code to practice python and develop a deeper understanding of the concept.**
 
 Think Stats uses a higher degree of python complexity from the python tutorials and introductions to python concepts, and that is intentional to prepare you for the bootcamp.  
 
@@ -34,7 +34,7 @@ Think Stats uses a higher degree of python complexity from the python tutorials 
 
 ---
 
-## <a name="section-c"></a>3.  Instructions for Cloning the Repo 
+## <a name="section-c"></a>3.  Instructions for Cloning the Repo
 Using the [code referenced in the book](https://github.com/AllenDowney/ThinkStats2), follow the step-by-step instructions below.  
 
 **Step 1. Create a directory on your computer where you will do the prework.  Below is an example:**
@@ -76,11 +76,11 @@ This problem presents a robust example of actual vs biased data.  As a data scie
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
 
 ### Q4. [Think Stats Chapter 5 Exercise 1](statistics/5-1-blue_men.md) (normal distribution of blue men)
-This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
+This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic.
 
 
 
-### Q5. Bayesian (Elvis Presley twin) 
+### Q5. Bayesian (Elvis Presley twin)
 
 Bayes' Theorem is an important tool in understanding what we really know, given evidence of other information we have, in a quantitative way.  It helps incorporate conditional probabilities into our conclusions.
 
@@ -93,7 +93,38 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+__Frequentist statistics__
+- is the more traditional or "classical" approach
+- applies probability to data
+- never uses or gives the probability of a hypothesis (no prior or posterior)
+- depends on the likelihood for both observed and unobserved data
+- uses probability _only_ to model certain processes broadly described as "sampling"
+- tends to be less computationally intensive
+
+__Bayesian methods__
+- use probabilities for both hypotheses and data
+- depend on the prior and likelihood of observed data
+- use probability more widely to model both sampling and other kinds of uncertainty
+- may be computationally intensive
+
+__Example 1: flipping a coin__
+If you suspect a friend has a weighted coin and you observe that it comes up heads 9 times out of 10...  
+
+__Frequentists__ would calculate the probability of getting such a result with an unweighted coin.  The answer (~1%) is not a direct measure of the probability that the coin is weighted; its a measure of how improbable the 9-in-10 result is - a piece of information that can be useful in investigating your suspicion.  
+
+__Bayesian__ calculations go straight for the probability of the hypothesis, factoring in not just the data from the coin-toss experiment but any other relevant information - including whether you have previously seen your friend use a weighted coin.  
+
+_Source:_
+https://www.nytimes.com/2014/09/30/science/the-odds-continually-updated.html?_r=1
+
+__Example 2: average height of males__  
+
+__Bayesian__ calculations would begin with a prior probability distribution which reflects the state of knowledge about the average height before collecting any data. After collecting some data (e.g. random samples) the prior distribution is updated in light of the data to get a new probability distribution called the posterior distribution, which reflects our state of knowledge about the average height after collecting data.
+
+__Frequentists__ would make a probability statement about _sampling_ a random draw of the population.  They would use techniques such as p-values, confidence intervals and hypothesis tests.
+
+_Source:_  
+https://www.quora.com/What-is-the-difference-between-Bayesian-and-frequentist-statisticians
 
 ---
 
@@ -117,7 +148,7 @@ In the theoretical world, all data related to an experiment or a scientific prob
 
 Read Allen Downey's [Think Bayes](http://greenteapress.com/thinkbayes/) book.  It is available online for free, or you can buy a paper copy if you would like.
 
-[<img src="img/think_bayes.png" title="Think Bayes"/>](http://greenteapress.com/thinkbayes/) 
+[<img src="img/think_bayes.png" title="Think Bayes"/>](http://greenteapress.com/thinkbayes/)
 
 ---
 
