@@ -1,3 +1,12 @@
 [Think Stats Chapter 5 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2006.html#toc50) (blue men)
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Convert heights from feet/inches to centimeters:
+```python
+upper = 6 * 30.48 + 1 * 2.54
+lower = 5 * 30.48 + 10 * 2.54
+print(upper, lower)
+```  
+Use the CDF to evaluate the percentage of US males who are in this range:  
+```python
+dist.cdf(upper) - dist.cdf(lower)
+```
