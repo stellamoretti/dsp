@@ -100,7 +100,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 >>  = 1/300 * 1/2
 >>  = 1/600
 >>   
->> Next, calculate the conditional probability that Elvis was an identical twin:
+>> Next, calculate the conditional probability that Elvis was an identical twin:  
 >> P(identical twins|twin brother)
 >>  = P(identical twins & twin brother) / P(twin brother)
 >>  = (1/600) / ( (1/500) + (1/600) )
