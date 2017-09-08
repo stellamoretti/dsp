@@ -8,6 +8,7 @@ print(upper, lower)
 ```  
 Yields:  
 185.42 177.8  
+  
 Use the CDF to evaluate the percentage of US males who are in this range:  
 ```python
 dist.cdf(upper) - dist.cdf(lower)
